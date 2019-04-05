@@ -21,7 +21,14 @@
                 <input type="email" class="form-control" placeholder="Email" >
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block" (click)="login()">Log in</button>
+                <label>Roles</label>
+                <select class="form-control">
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                      </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" (click)="register()">Submit</button>
             </div> 
 
         </div>

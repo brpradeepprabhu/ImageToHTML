@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { UploadComponent } from './upload/upload.component';
 import { FileUploadModule } from 'primeng/fileupload';
+import { HttpClientModule } from '@angular/common/http'; 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FileUploadModule } from 'primeng/fileupload';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FileUploadModule
+    AppRoutingModule,FileUploadModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
