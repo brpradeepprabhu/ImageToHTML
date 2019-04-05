@@ -9,6 +9,7 @@ import { UploadComponent } from './upload/upload.component';
 import { FileUploadModule } from 'primeng/fileupload';
 import { HttpClientModule } from '@angular/common/http'; 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AppService } from './service/app.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
