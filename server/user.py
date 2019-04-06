@@ -1,4 +1,5 @@
 from flask import Blueprint, request, jsonify
+from flask_cors import CORS, cross_origin
 import pymongo
 
 user_api = Blueprint('user_api', __name__)
@@ -8,6 +9,7 @@ mycol = mydb["user"]
 
 
 @user_api.route("/login", methods=["POST"])
+@cross_origin()
 def login():
     global mycol
     userDetails = request.get_json()

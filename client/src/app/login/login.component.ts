@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
     }
     this.appService.login(data).subscribe((res)=>{
       console.log(res)
+      this.router.navigate(['/upload'])
     })
   }
 

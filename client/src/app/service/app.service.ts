@@ -12,4 +12,7 @@ export class AppService {
   login(data) {
     return this.http.post(environment.api + "login", data)
   }
+  register(data){
+    return this.http.post(environment.api + "register", data)
+  }
 }
